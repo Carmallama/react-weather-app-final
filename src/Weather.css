@@ -1,0 +1,18 @@
+.Weather {
+  border: 4px solid #827bb3;
+  border-radius: 10px;
+}
+.Weather h1 {
+  color: #272044;
+  font-weight: bold;
+  text-align: center;
+}
+.Weather h2 {
+  color: #873ff2;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.current {
+  background-color: #f9f7fc;
+}
