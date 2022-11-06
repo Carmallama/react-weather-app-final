@@ -11,7 +11,7 @@ export default function Weather() {
               {" "}
               <input
                 type="search"
-                placeholder="Search a city..."
+                placeholder="🔎Search a city..."
                 className="
           form-control"
               />
@@ -33,12 +33,15 @@ export default function Weather() {
         </div>
         <div className="col-md temperatures">
           <ul>
-            <li>13°C</li>
-            <li>Light Rain</li>
+            <li className="currentTemperature">
+              <span className="temperature">13</span>
+              <span className="units">°C</span>
+            </li>
+            <li className="currentDescription">Light Rain</li>
           </ul>
         </div>
         <div className="col-md weather-overview">
-          <div>Weather overview:</div>
+          <div>Weather overview |</div>
           <ul>
             <li>Feels like: 12°C</li>
             <li>Humidity: 79%</li>
