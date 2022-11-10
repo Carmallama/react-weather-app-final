@@ -32,6 +32,11 @@
   list-style: none;
 }
 
+.Weather canvas {
+  margin-top: 15px;
+  margin-left: 50px;
+}
+
 .Weather .currentTemperature {
   font-size: 70px;
   color: #272044;
