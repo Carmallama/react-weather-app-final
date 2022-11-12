@@ -1,7 +1,5 @@
 .WeatherForecast {
   text-align: center;
-}
-
-.WeatherForecast WeatherIcon {
-  color: red;
+  padding-bottom: 40px;
+  padding-top: 30px;
 }

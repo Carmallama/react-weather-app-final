@@ -12,6 +12,7 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
@@ -65,10 +66,12 @@ export default function Weather(props) {
             </div>
           </form>
         </div>
+        <hr />
         <h1>{weatherData.city}</h1>
         <h2>
           <FormattedDate date={weatherData.date} />
         </h2>
+        <hr />
         <div className="row current">
           <div className="col-md weatherIcon">
             <WeatherIcon code={weatherData.icon} size={84} />
@@ -92,7 +95,8 @@ export default function Weather(props) {
             </ul>
           </div>
         </div>
-        <WeatherForecast />
+        <hr />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {

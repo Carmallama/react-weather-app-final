@@ -13,6 +13,18 @@
   border-radius: 50px;
   margin: 20px auto;
 }
+.Weather .search-form {
+  max-width: 375px;
+  padding: 12px;
+}
+.Weather .btn {
+  color: #f9f7fc;
+  background-color: #bcabf7;
+}
+
+.Weather .btn:hover {
+  background-color: #b78cf7;
+}
 .Weather h1 {
   color: #272044;
   font-weight: bold;
@@ -30,6 +42,11 @@
 }
 .Weather li {
   list-style: none;
+}
+
+.Weather hr {
+  color: #bcabf7;
+  margin: 15px;
 }
 
 .Weather .currentTemperature {
