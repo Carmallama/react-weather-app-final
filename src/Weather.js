@@ -84,6 +84,9 @@ export default function Weather(props) {
               <li className="currentDescription text-capitalize">
                 {weatherData.description}
               </li>
+              <li>
+                L: 10 <strong>H: 13</strong>
+              </li>
             </ul>
           </div>
           <div className="col-md weather-overview">

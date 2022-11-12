@@ -48,6 +48,9 @@
   color: #bcabf7;
   margin: 15px;
 }
+.Weather .weatherIcon {
+  padding-top: 40px;
+}
 
 .Weather .currentTemperature {
   font-size: 70px;
@@ -68,4 +71,8 @@
 
 .Weather .weather-overview {
   text-align: left;
+  padding-top: 40px;
+}
+.Weather .temperatures {
+  text-align: center;
 }
