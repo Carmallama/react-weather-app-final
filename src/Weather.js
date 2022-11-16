@@ -15,12 +15,15 @@ export default function Weather(props) {
       coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
+      minTemperature: Math.round(response.data.main.temp_min),
+      maxTemperature: Math.round(response.data.main.temp_max),
       wind: response.data.wind.speed,
       city: response.data.name,
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
     });
+    console.log(response.data);
   }
 
   function search() {
@@ -85,7 +88,8 @@ export default function Weather(props) {
                 {weatherData.description}
               </li>
               <li>
-                L: 10 <strong>H: 13</strong>
+                L: {weatherData.minTemperature}{" "}
+                <strong>H: {weatherData.maxTemperature}</strong>
               </li>
             </ul>
           </div>
